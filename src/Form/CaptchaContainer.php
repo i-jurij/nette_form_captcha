@@ -31,7 +31,9 @@ class CaptchaContainer extends Container
 
         // question display
         $textInput = new TextInput($questionLabel);
-        $textInput->setRequired(true);
+        // $textInput->setRequired(true);
+        // $textInput->setRequired('Введите ответ в поле капчи.');
+        $textInput->setRequired('Fill in captcha.');
 
         // anwser hash
         $hiddenField = new HiddenField($question->getHash());

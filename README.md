@@ -47,7 +47,7 @@ public function createComponentForm()
 {
     $form = new Form();
     
-    $form->addCaptcha('captcha', 'Are you robot?');
+    $form->addCaptcha('captcha', 'Wrong captcha');
     
     $form->addSubmit('send');
     
